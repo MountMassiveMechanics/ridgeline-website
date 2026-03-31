@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ridgeline Fleet Services — Marketing Website
 
-## Getting Started
+Next.js 16 · Tailwind CSS v4 · Google Fonts (Barlow + Barlow Condensed) · Vercel
 
-First, run the development server:
+## Setup
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Logo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Place your logo file at:
 
-## Learn More
+```
+public/logo.png
+```
 
-To learn more about Next.js, take a look at the following resources:
+The logo is a transparent-background circular PNG badge. It renders at three sizes:
+- **Nav:** 52×52 px
+- **Hero:** 120×120 px
+- **Footer:** 44×44 px
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Calendly / Booking URL
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+All "Schedule a Fleet Assessment" CTAs currently link to `#`. To wire up Calendly:
 
-## Deploy on Vercel
+1. Copy `.env.example` → `.env.local`
+2. Set `NEXT_PUBLIC_ASSESSMENT_URL=https://calendly.com/your-handle/fleet-assessment`
+3. Replace the `ASSESSMENT_URL` constant in `components/Nav.tsx`, `components/Hero.tsx`, and `components/Pricing.tsx` with `process.env.NEXT_PUBLIC_ASSESSMENT_URL ?? "#"`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploy to Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npx vercel
+```
+
+Or connect the repo in the Vercel dashboard — it auto-detects Next.js and deploys on every push to main.
+
+## Brand Colors
+
+| Token      | Hex       | Usage                     |
+|------------|-----------|---------------------------|
+| navy       | `#1B2F5E` | Primary, hero bg, nav CTA |
+| gold       | `#B8962E` | Accent, CTAs, eyebrows    |
+| dark-navy  | `#13244A` | Trust bar, footer         |
+| light-text | `#9AAFCF` | Subheads on dark          |
+| muted      | `#7A94B8` | Secondary text on dark    |
+
+## Project Structure
+
+```
+app/
+  layout.tsx        fonts, metadata, html shell
+  page.tsx          page composition
+  globals.css       Tailwind v4 @theme + base styles
+components/
+  Nav.tsx
+  Hero.tsx
+  TrustBar.tsx
+  HowItWorks.tsx
+  Pricing.tsx
+  Industries.tsx
+  Testimonials.tsx
+  Footer.tsx
+public/
+  logo.png          ← add your logo here
+vercel.json
+.env.example
+```
