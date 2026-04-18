@@ -21,12 +21,11 @@ const STEPS = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-white px-6 py-16 md:py-20">
+    <section id="how-it-works" className="bg-white px-6 py-16 md:py-24">
       <div className="max-w-6xl mx-auto">
-        {/* Section header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 reveal">
           <p
-            className="text-navy uppercase font-medium mb-3"
+            className="text-gold uppercase font-medium mb-3"
             style={{ fontSize: "11px", letterSpacing: "0.12em" }}
           >
             How It Works
@@ -39,12 +38,11 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        {/* Cards grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {STEPS.map(({ number, title, description }) => (
+          {STEPS.map(({ number, title, description }, i) => (
             <div
               key={number}
-              className="bg-secondary rounded-lg p-[18px]"
+              className={`reveal reveal-d${i + 1} bg-secondary rounded-xl p-6`}
               style={{ border: "0.5px solid #D8E3F0" }}
             >
               <div

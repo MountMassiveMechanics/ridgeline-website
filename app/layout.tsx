@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
+import RevealInit from "@/components/RevealInit";
 
 const barlow = Barlow({
   weight: ["400", "500"],
@@ -46,7 +47,10 @@ export default function RootLayout({
       lang="en"
       className={`${barlow.variable} ${barlowCondensed.variable}`}
     >
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <RevealInit />
+        {children}
+      </body>
     </html>
   );
 }

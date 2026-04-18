@@ -11,10 +11,9 @@ const INDUSTRIES = [
 
 export default function Industries() {
   return (
-    <section id="industries" className="bg-white px-6 py-16 md:py-20">
+    <section id="industries" className="bg-gray-50 px-6 py-16 md:py-20">
       <div className="max-w-6xl mx-auto">
-        {/* Section header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-10 reveal">
           <p
             className="text-navy uppercase font-medium mb-3"
             style={{ fontSize: "11px", letterSpacing: "0.12em" }}
@@ -29,16 +28,15 @@ export default function Industries() {
           </p>
         </div>
 
-        {/* Pill tags */}
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="flex flex-wrap justify-center gap-3 reveal">
           {INDUSTRIES.map((industry) => (
             <span
               key={industry}
-              className="bg-secondary rounded-full font-medium text-navy"
+              className="bg-white rounded-full font-medium text-navy"
               style={{
                 border: "0.5px solid #D8E3F0",
-                padding: "5px 13px",
-                fontSize: "12px",
+                padding: "7px 16px",
+                fontSize: "13px",
               }}
             >
               {industry}

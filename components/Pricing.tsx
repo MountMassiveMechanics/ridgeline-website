@@ -11,10 +11,9 @@ const FEATURES = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="bg-gray-50 px-6 py-16 md:py-20">
+    <section id="pricing" className="bg-gray-50 px-6 py-16 md:py-24">
       <div className="max-w-6xl mx-auto">
-        {/* Section header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 reveal">
           <p
             className="text-navy uppercase font-medium mb-3"
             style={{ fontSize: "11px", letterSpacing: "0.12em" }}
@@ -29,13 +28,11 @@ export default function Pricing() {
           </p>
         </div>
 
-        {/* Pricing card */}
         <div className="flex justify-center">
           <div
-            className="bg-navy rounded-lg w-full"
-            style={{ maxWidth: "360px", padding: "26px" }}
+            className="reveal bg-navy rounded-xl w-full"
+            style={{ maxWidth: "380px", padding: "28px" }}
           >
-            {/* Label */}
             <p
               className="text-gold uppercase font-medium mb-4"
               style={{ fontSize: "11px", letterSpacing: "0.12em" }}
@@ -43,11 +40,10 @@ export default function Pricing() {
               Fleet Stability Program
             </p>
 
-            {/* Price */}
             <div className="flex items-end gap-2 mb-1">
               <span
                 className="font-condensed text-white leading-none"
-                style={{ fontSize: "44px" }}
+                style={{ fontSize: "48px" }}
               >
                 $200
               </span>
@@ -56,7 +52,6 @@ export default function Pricing() {
               per vehicle / per month
             </p>
 
-            {/* Features */}
             <ul className="space-y-0 mb-6">
               {FEATURES.map((feature) => (
                 <li
@@ -72,14 +67,12 @@ export default function Pricing() {
               ))}
             </ul>
 
-            {/* Disclaimer */}
             <p className="text-muted mb-5 leading-relaxed" style={{ fontSize: "12px" }}>
               Scheduled maintenance is covered under your monthly rate. Inspections may identify
-              additional repairs needed to keep your vehicles roadworthy — these are quoted
-              separately and only performed with your approval. No surprise charges, ever.
+              additional repairs — these are quoted separately and only performed with your
+              approval. No surprise charges, ever.
             </p>
 
-            {/* CTA */}
             <a
               href={ASSESSMENT_URL}
               target="_blank"
