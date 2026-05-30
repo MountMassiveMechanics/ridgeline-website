@@ -2,7 +2,7 @@ export default function TermsAndConditions() {
   return (
     <main style={{ maxWidth: 760, margin: '0 auto', padding: '48px 24px', fontFamily: 'sans-serif', color: '#111' }}>
       <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>Terms and Conditions</h1>
-      <p style={{ color: '#555', marginBottom: 32 }}>Ridgeline Fleet Services — Last updated April 27, 2026</p>
+      <p style={{ color: '#555', marginBottom: 32 }}>Ridgeline Fleet Services — Last updated June 1, 2026</p>
 
       <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>1. Services</h2>
       <p>Ridgeline Fleet Services (operated by Mount Massive Mechanics LLC) provides mobile fleet maintenance and repair services to commercial clients under a Fleet Stability Program retainer agreement. Services are performed by ASE-certified technicians at client-designated locations.</p>
@@ -27,7 +27,7 @@ export default function TermsAndConditions() {
       <p>These terms are governed by the laws of the State of Colorado.</p>
 
       <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>8. Contact</h2>
-      <p>Questions? Contact us at <a href="mailto:devin@ridgelinefleetservices.com">devin@ridgelinefleetservices.com</a> or call <a href="tel:+17192046086">(719) 204-6086</a>.</p>
+      <p>Questions? Contact us at <a href="mailto:devinmedina@mountmassivemechanics.com">devinmedina@mountmassivemechanics.com</a> or call <a href="tel:+17192046086">(719) 204-6086</a>.</p>
     </main>
   );
 }

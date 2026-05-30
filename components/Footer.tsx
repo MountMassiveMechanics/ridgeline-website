@@ -28,12 +28,17 @@ export default function Footer() {
             City, CO · Denver Metro
           </p>
           <p style={{ fontSize: "11px", color: "#4A6080" }}>
-            ridgelinefleetservices.com · devin@ridgelinefleetservices.com · Denver
+            ridgelinefleetservices.com · devinmedina@mountmassivemechanics.com · Denver
             Metro — 40-Mile Service Radius
           </p>
           <p style={{ fontSize: "11px", color: "#4A6080" }}>
             © 2026 Mount Massive Mechanics LLC. All rights reserved. · Licensed
             &amp; Insured in Colorado
+          </p>
+          <p style={{ fontSize: "11px", color: "#4A6080" }}>
+            <a href="/privacy" style={{ color: "#4A6080", textDecoration: "underline" }}>Privacy Policy</a>
+            {" · "}
+            <a href="/terms" style={{ color: "#4A6080", textDecoration: "underline" }}>Terms &amp; Conditions</a>
           </p>
         </div>
       </div>
