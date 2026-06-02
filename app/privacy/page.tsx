@@ -34,8 +34,8 @@ export default function PrivacyPolicy() {
       <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>3. SMS Communications</h2>
       <p>
         By providing your phone number and opting in, you consent to receive SMS text message notifications from
-        Ridgeline Fleet Services regarding your fleet service status, work order updates, appointment reminders, and
-        billing notifications.
+        Ridgeline Fleet Services regarding your fleet service status, work order status updates, appointment
+        confirmations, appointment reminders, and billing notifications.
       </p>
       <ul>
         <li>Message frequency varies based on your service activity.</li>
