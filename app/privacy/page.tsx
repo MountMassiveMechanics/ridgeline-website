@@ -1,39 +1,66 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy — Ridgeline Fleet Services",
+  description:
+    "Privacy Policy for Ridgeline Fleet Services (Mount Massive Mechanics LLC), including how we handle SMS communications and opt-out.",
+};
+
 export default function PrivacyPolicy() {
   return (
     <main style={{ maxWidth: 760, margin: '0 auto', padding: '48px 24px', fontFamily: 'sans-serif', color: '#111' }}>
       <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 8 }}>Privacy Policy</h1>
-      <p style={{ color: '#555', marginBottom: 32 }}>Ridgeline Fleet Services — Last updated June 1, 2026</p>
+      <p style={{ color: '#555', marginBottom: 32 }}>
+        Ridgeline Fleet Services (Mount Massive Mechanics LLC) — Effective June 1, 2026
+      </p>
 
-      <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>1. Who We Are</h2>
-      <p>Ridgeline Fleet Services is a mobile fleet maintenance company operated by Mount Massive Mechanics LLC, based in Commerce City, CO. We provide preventive maintenance and repair services to commercial fleets.</p>
-
-      <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>2. Information We Collect</h2>
+      <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>1. Information We Collect</h2>
       <p>We collect the following information from clients and prospective clients:</p>
       <ul>
-        <li>Business name, contact name, phone number, and email address</li>
-        <li>Vehicle information (year, make, model, VIN, mileage)</li>
-        <li>Service and billing records</li>
+        <li>Business contact information (name, company, phone number, and email) provided when signing up for fleet services</li>
+        <li>Vehicle information (make, model, year, VIN, and mileage) for fleet maintenance purposes</li>
+        <li>Service history and inspection records</li>
       </ul>
 
-      <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>3. How We Use Your Information</h2>
-      <p>We use your information to:</p>
+      <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>2. How We Use Your Information</h2>
+      <p>We use the information we collect to:</p>
       <ul>
-        <li>Schedule and perform fleet maintenance services</li>
-        <li>Send transactional SMS and email notifications related to your service (invoices, appointment confirmations, service updates)</li>
-        <li>Process payments and maintain service records</li>
+        <li>Provide fleet maintenance and inspection services</li>
+        <li>Send service updates, appointment reminders, and work order notifications</li>
+        <li>Communicate via SMS if you have opted in to text message notifications</li>
+        <li>Improve our services</li>
       </ul>
 
-      <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>4. SMS Communications</h2>
-      <p>By providing your phone number and entering into a service agreement with Ridgeline Fleet Services, you consent to receive transactional SMS messages related to your fleet service. These messages include work order status updates, appointment confirmations, invoice notifications, and service completion notices. Message frequency varies based on service activity. Message and data rates may apply. Reply STOP to opt out at any time. Reply HELP for assistance. Opting out of SMS does not affect your service.</p>
+      <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>3. SMS Communications</h2>
+      <p>
+        By providing your phone number and opting in, you consent to receive SMS text message notifications from
+        Ridgeline Fleet Services regarding your fleet service status, work order updates, appointment reminders, and
+        billing notifications.
+      </p>
+      <ul>
+        <li>Message frequency varies based on your service activity.</li>
+        <li>Message and data rates may apply.</li>
+        <li>To opt out of SMS notifications at any time, reply STOP to any message you receive from us.</li>
+        <li>For help, reply HELP or contact us at <a href="mailto:devinmedina@mountmassivemechanics.com">devinmedina@mountmassivemechanics.com</a>.</li>
+        <li>Opting out of SMS will not affect your ability to receive service.</li>
+      </ul>
 
-      <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>5. Data Sharing</h2>
-      <p>We do not sell or share your personal information with third parties for marketing purposes. We may share information with service providers (such as payment processors) solely to fulfill our services.</p>
+      <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>4. Information Sharing</h2>
+      <ul>
+        <li>We do not sell or rent your personal information to third parties.</li>
+        <li>We may share information with service contractors solely to perform fleet maintenance on your behalf.</li>
+        <li>We may disclose information if required by law.</li>
+      </ul>
 
-      <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>6. Data Security</h2>
-      <p>We use industry-standard security measures to protect your information. Your data is stored securely and access is restricted to authorized personnel only.</p>
+      <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>5. Data Security</h2>
+      <p>We use industry-standard security measures to protect your information.</p>
 
-      <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>7. Contact</h2>
-      <p>Questions? Contact us at <a href="mailto:devinmedina@mountmassivemechanics.com">devinmedina@mountmassivemechanics.com</a> or call <a href="tel:+17192046086">(719) 204-6086</a>.</p>
+      <h2 style={{ fontSize: 18, fontWeight: 600, marginTop: 32 }}>6. Contact Us</h2>
+      <p>
+        Email: <a href="mailto:devinmedina@mountmassivemechanics.com">devinmedina@mountmassivemechanics.com</a>
+        <br />
+        Website: <a href="https://ridgelinefleetservices.com">ridgelinefleetservices.com</a>
+      </p>
     </main>
   );
 }
